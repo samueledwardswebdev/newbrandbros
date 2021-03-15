@@ -122,7 +122,7 @@ hr {
  position: absolute;
  bottom: 0;
  right: 0;
- padding: 2rem;
+ padding: 2.5rem;
  background: var(--white-clr);
  border-radius: 50%;
  color: var(--grey-clr);
