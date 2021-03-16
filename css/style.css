@@ -18,7 +18,10 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: var(--white-clr);
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
 
 ul {
   list-style: none;
@@ -114,7 +117,7 @@ hr {
 
 .social i:hover {
   color: var(--green-clr);
-  transform: scale(2);
+  transform: scale(1.2);
 
 }
 
@@ -151,6 +154,7 @@ hr {
   margin-right: 10%;
   margin-top: 5rem;
 }
+
 
 .projects-container {
   width: 100%;
@@ -220,6 +224,12 @@ hr {
   position: relative;
 }
 
+.pricing-wrapper hr {
+  position: absolute;
+  top: -200px;
+  left: 0;
+}
+
 #pricing .pricing-title {
   color: var(--white-clr);
   position: absolute;
@@ -249,7 +259,6 @@ hr {
 
 .pricing-wrapper .card:hover {
   transform: scale(1.050);
-  border: 1px var(--green-clr) solid;
 }
 
 .pricing-wrapper .card h5 {
@@ -298,4 +307,157 @@ hr {
   letter-spacing: 2px;
   font-size: 0.9rem;
   cursor: pointer;
+}
+
+/* Contact */
+
+#contact {
+  background:var(--dark-clr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+/* Contact Form */
+
+.contact-container {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.contact-container h2 {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 3px;
+}
+
+.contact-wrapper {
+  max-width: 60%;
+  margin: auto;
+}
+
+.contact-item label {
+  font-size: 1.5rem;
+}
+
+.contact-item input{
+  display: block;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--white-clr);
+  width: 100%;
+  margin: 15px 0;
+  padding: 0.5rem 0;
+  color: var(--white-clr);
+}
+
+.contact-item .message {
+  padding: 3rem 0;
+}
+
+input:focus {
+  outline: none;
+  background: none;
+  color: var(--white-clr);
+  border-bottom: var(--green-clr) 1px solid;
+
+}
+
+
+.contact-wrapper .btn {
+  padding: .5rem 2rem;
+  border: solid 2px var(--white-clr);
+  color: var(--white-clr);
+  background: transparent;
+  cursor: pointer;
+}
+
+#contact hr {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* Footer */
+
+footer {
+  background: var(--white-clr);
+  color: var(--dark-clr);
+  padding-top: 3rem;
+}
+
+.footer-container {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+  position: relative;
+}
+
+.footer-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-container .logo {
+  align-self: center;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.footer-container .logo {
+  align-items: flex-end;
+}
+
+.footer-container .logo img {
+  background: var(--dark-clr);
+  border-radius: 5px;
+  width: 200px;
+}
+
+.footer-container .logo .social-icons {
+  padding: 1rem;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container .logo i {
+  display: inline;
+  font-size: 1.5rem;
+  transition: all ease 0.8s;
+}
+
+.footer-container .logo i:hover {
+  color: var(--green-clr);
+  transform: scale(1.5);
+}
+
+.footer-container h3 {
+  margin-bottom: 30px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.footer-container a,
+.footer-container p {
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.trademark {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 5px;
 }
