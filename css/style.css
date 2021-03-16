@@ -386,7 +386,7 @@ input:focus {
 
 /* Footer */
 
-footer {
+#footer {
   background: var(--white-clr);
   color: var(--dark-clr);
   padding-top: 3rem;
