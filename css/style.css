@@ -140,7 +140,16 @@ hr {
 
 .projects {
   background: var(--dark-clr);
-  padding: 4rem 2rem;
+  padding: 4rem 2.2rem;
+  position: relative;
+}
+
+.projects hr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10%;
+  margin-top: 5rem;
 }
 
 .projects-container {
@@ -177,11 +186,116 @@ hr {
 }
 
 
-
 .project-title {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   letter-spacing: 4px;
   font-weight: 200;
   padding: 0 .5rem;
+}
+
+/* Pricing */
+
+#pricing {
+  height: 100%;
+  padding: 2rem 0;
+  background: var(--dark-clr);
+  display: flex;
+  position: relative;
+}
+
+#pricing > p {
+  text-align: center;
+  color: var(--light-color);
+}
+
+#pricing .pricing-wrapper {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#pricing .pricing-title {
+  color: var(--white-clr);
+  position: absolute;
+  top: 0;
+  right: -50px;
+  letter-spacing: 3px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+
+/* Card */
+
+.pricing-wrapper .card {
+  color: var(--white-clr);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px 1px rgb(0,0,0,0.4);
+  transition: ease all 0.5s;
+  z-index: 0;
+  border: solid 1px var(--white-clr);
+}
+
+.pricing-wrapper .card:hover {
+  transform: scale(1.050);
+  border: 1px var(--green-clr) solid;
+}
+
+.pricing-wrapper .card h5 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.pricing-wrapper .card h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.pricing-wrapper .card ul {
+  list-style: none;
+}
+
+.pricing-wrapper .card ul li {
+  padding: 1rem 0rem;
+  letter-spacing: 1.2px;
+  width: 80%;
+  margin: auto;
+}
+
+.pricing-wrapper .card-primary {
+  padding: 3rem 1rem;
+  z-index: 1;
+  background: var(--white-clr);
+  color: var(--dark-clr);
+}
+
+.pricing-wrapper .card-primary .btn {
+  border: 2px var(--dark-clr) solid;
+  color: var(--dark-clr);
+}
+
+.pricing-wrapper .card ul li:last-child {
+  border-bottom: none;
+}
+
+.pricing-wrapper .btn {
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: var(--white-clr) 2px solid;
+  color: var(--white-clr);
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
