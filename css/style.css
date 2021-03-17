@@ -603,9 +603,9 @@ input:focus {
   }
 
   .title {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     width: 90%;
-    padding: 2rem;
+    padding: 0 2rem;
   }
 
   #header .social {
